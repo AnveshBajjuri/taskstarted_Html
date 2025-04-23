@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSRTC</title>
+</head>
+<body>
+    <CENTER style=" background-color:rgb(157, 181, 227);">
+        <img src="./No-change-in-TSRTC-logo-cl-removebg-preview.png" width="150" length="150">
+        <h2 style="color: blue;">TELANGANA STATE ROAD TRANSPORT CORORATION</h2>
+        <h3> GENERAL BUS PASS APPLICATION</h3><br>
+    </CENTER>
+    <br>
+    <center>
+        <form  action="./loginSuccessful.html" method="get" >
+            <fieldset>
+                <legend style="background-color: rgb(142, 191, 241);">Applicant Details</legend>
+                <table>
+                        <tr>
+                            <td><label for="Name">Name</label></td>
+                            <td><input type="text" id="Name" required></td>
+                            <td><label for="fathername">father's/Guardaian's <br>name</label></td>
+                            <td><input type="text" id="fathername" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Dateofbirth">Data of Birth </label></td>
+                        <td><input type="date" id="Dateofbirth" required></td>
+                        <td><label for= gender>Gender</label></td>
+                        <td><label>male<input type="radio" name="Gender" value="Male" required><label>Female<input type="radio" name="Gender" value="Female"</label>
+                    </tr>
+                    <td>
+                        <label for=age>Age</Data></label></td>
+                        <td><input type=text id="age" maxlength="2" pattern="\d{1,2}" required></td>
+                        <td><label for= Aadhar>Aadhaar No:</label></td>
+                        <td><input type="number" id="Aadhar" maxlength="12" pattern="\d{12}"  required></td>
+                    </tr>
+                    <td>
+                        <label for=whatAppNo>WhatApp No</Data></label></td>
+                        <td><input type=int id="whatAppNo" maxlength="10" required></td>
+                        <td><label for= Email>Email Id :</label></td>
+                        <td><input type="email" id="Email" required></td>
+                    </tr>
+                    <td>
+                        <label for=photo>Photo:</Data></label></td>
+                        <td><input type="file"  id="photo"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend style="background-color: rgb(142, 191, 241);">Residential Address Details </details></legend>
+                <table width="671">
+                        <tr>
+                            <td><label for="ApplicationAddress">Application's Address</label></td>
+                            <td> <textarea <input type="text" id="ApplicationAddress"></textarea></td>
+                            <td><label for="district">District</label></td>
+                            <td>
+                                <select>
+                                    <option disabled selected>Select District</option>
+                                    <option id="warangal">warangal</option>
+                                    <option id="Hyderabad">Hyderabad</option>
+                                    <option id="Rangareddy">Rangareddy</option>
+                                    <option id="Medchal">Medchal</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>    
+                                <label for="Mandal">Mandal</Data></label>
+                            </td>
+                            <td>
+                                <select required>
+                                    <option disabled selected>select Mendal</option>
+                                    <option id="Mandal">1</option>
+                                    <option id="Mandal">2</option>
+                                    <option id="Mandal">3</option>
+                                </select>
+                            <td>
+                                <label for=Village>Village</label>
+                            </td>
+                            <td>
+                                <select id="Village" required>
+                                    <option disabled selected>select Village</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Pincode">Pincode</label></td>
+                            <td> <input type="text" id="Pincode" maxlength="6" required></td>
+                        </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend style="background-color: rgb(142, 191, 241);">Pass Type Details </legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="City"> City</label>
+                            <select id="City" required>
+                                <option disabled selected>Select the city</option>
+                                <option>Hyderabad</option>
+                                <option>warangal</option>
+                                <option>Rangareddy</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="Passtype">Pass Type</label>
+                            <select id="Passtype" required>
+                                <option disabled selected>--Select--</option>
+                                <option>General pass</option>
+                                <option>General Ordinary Route Pass Mtly</option>
+                                <option>Ordinart Pass</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend style="background-color: rgb(142, 191, 241);">Mode of Payment & Pass Collection</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="Paymentmode">Payment Mode</label>
+                            <select id="Paymentmode" required>
+                                <option disabled selected>Select Payment Mode</option>
+                                <option>Payment at Counter</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="passdeliverymode">Pass Delivery Mode</label>
+                            <select id="passdeliverymode">
+                                <option disabled selected>Select Payment Mode</option>
+                                <option>At Counter</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="centertocollectpass">center at Collect Pass</label>
+                            <select id="centertocollectpass" required>
+                                <option disabled selected>--Select--</option>
+                                <option>warangal bus stand</option>
+                                <option>KBHP</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <input type="submit" value="submit">
+        </form>
+    </center>
+</body>
+</html>
